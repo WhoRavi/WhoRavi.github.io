@@ -119,8 +119,12 @@
 </main>
 
 <footer>
-  &copy; 2025 Ravi Devgam · Fueled by data, deadlifts & dark mode
+  &copy; <span id="currentYear"></span> Ravi Devgam · Fueled by data, deadlifts & dark mode!
 </footer>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
