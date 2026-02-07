@@ -4,79 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="aboutMe.png" type="image/png">
-  <title>Ravi Devgam | Calisthenics-Coding Combo</title>
+  <title>Ravi Devgam | Dev & Calisthenics</title>
   <style>
     body {
       margin: 0;
       font-family: 'Courier New', monospace;
-      background: #111;
+      background: #0b0b0b;
       color: #eee;
       line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem 1rem;
+      padding: 4rem 1rem 2rem;
       background: #000;
+      border-bottom: 2px solid #22d3ee;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: #22d3ee;
+      letter-spacing: 2px;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #aaa;
+      margin-top: 10px;
     }
 
     main {
-      max-width: 800px;
+      max-width: 850px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 1.5rem;
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
       color: #38bdf8;
-      border-bottom: 1px dashed #333;
-      padding-bottom: 0.4rem;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+      margin-bottom: 1.5rem;
     }
 
     .fun-facts li {
       margin-bottom: 1rem;
+      list-style: none;
+    }
+
+    .fun-facts li::before {
+      content: "➜ ";
+      color: #22c55e;
     }
 
     .fun-facts span {
       color: #facc15;
+      font-weight: bold;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: #222;
+      color: #22d3ee;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      border: 1px solid #333;
+    }
+
+    .projects li {
+      margin: 1.2rem 0;
+      list-style: none;
     }
 
     .projects a {
       color: #60a5fa;
       text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
     }
 
-    .projects li {
-      margin: 0.7rem 0;
+    .projects p {
+      margin: 5px 0 0 0;
+      font-size: 0.95rem;
+      color: #bbb;
     }
 
     .links a {
       display: inline-block;
-      margin: 0.5rem 1rem 0 0;
+      margin: 0.5rem 1.5rem 0 0;
       color: #22c55e;
       text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+    }
+
+    .links a:hover {
+      border-bottom: 1px solid #22c55e;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       color: #666;
-      font-size: 0.9rem;
-      border-top: 1px dashed #444;
+      font-size: 0.85rem;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
@@ -84,42 +126,70 @@
 
 <header>
   <h1>Ravi Devgam</h1>
-  <p>Balancing Handstands & Hugging Face APIs</p>
+  <p>Data Scientist | Full-Stack Architect | Calisthenics Athlete</p>
 </header>
 
 <main>
 
   <section>
-    <h2>Who Am I?</h2>
+    <h2>Who am I</h2>
     <ul class="fun-facts">
-      <li>Can do a <span>planche</span> better than most people can sit straight.</li>
-      <li>Solo rides + swimming = therapy. No playlist needed.</li>
-      <li>Data Scientist at Honeywell — wrangling data by day, wrestling gravity by night.</li>
-      <li>Freelancer sometimes — if the project’s cool and coffee is provided.</li>
+      <li><span>Data Scientist @ Honeywell</span> by day; Full-stack tinkerer by night.</li>
+      <li>Known for <span>planche progressions</span> and holding handstands longer than my code builds.</li>
+      <li><span>Biker:</span> Often found on my <span>Royal Enfield Scram 411</span>, probably heading toward Dhanushkodi.</li>
+      <li><span>Linux Lover:</span> I enjoy hardening AlmaLinux servers and Dockerizing everything in sight.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Projects (aka "Things I Broke Until They Worked")</h2>
+    <h2>Core Tech Stack</h2>
+    <div class="tech-stack">
+      <span class="tag">Vue.js / Nuxt.js</span>
+      <span class="tag">Python</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">RAG / LLMs</span>
+      <span class="tag">Qdrant / Vector DBs</span>
+      <span class="tag">Redis</span>
+      <span class="tag">Docker / Linux Admin</span>
+      <span class="tag">PostgreSQL</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects (The Good Stuff)</h2>
     <ul class="projects">
-      <li><a href="https://www.calculatoris.com/" target="_blank">Calculatoris</a> – All-in-one calculator hub, inspired by calculator.net.</li>
-      <li><a href="http://convertphoto.net/" target="_blank">ConvertPhoto</a> – Effortless photo conversion for all your image needs.</li>
-      <li><a href="https://github.com/whoravi" target="_blank">GitHub</a> – Where half my commits are titled “final-final-fix”.</li>
+      <li>
+        <a href="https://www.desipdf.net/" target="_blank">DesiPDF</a>
+        <p>A full suite of PDF tools built with Nuxt.js and Python. Heavy use of OCR and optimized server-side processing.</p>
+      </li>
+      <li>
+        <a href="https://www.calculatoris.com/" target="_blank">Calculatoris</a>
+        <p>An all-in-one hub for complex calculations. Built for speed and clean UX.</p>
+      </li>
+      <li>
+        <a href="http://convertphoto.net/" target="_blank">ConvertPhoto</a>
+        <p>Fast, client-side and server-side image manipulation and conversion hub.</p>
+      </li>
+      <li>
+        <a href="https://github.com/whoravi" target="_blank">The Lab (GitHub)</a>
+        <p>Where I experiment with RAG models, GSM Quest, and things that might eventually break the internet.</p>
+      </li>
     </ul>
   </section>
 
   <section>
-    <h2>Stalk Me (Professionally)</h2>
+    <h2>Connect</h2>
     <div class="links">
       <a href="https://github.com/whoravi" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/ravidevgam/" target="_blank">LinkedIn</a>
+      <a href="mailto:your-email@example.com">Email</a>
     </div>
   </section>
 
 </main>
 
 <footer>
-  &copy; <span id="currentYear"></span> Ravi Devgam · Fueled by data, deadlifts & dark mode!
+  &copy; <span id="currentYear"></span> Ravi Devgam · Built with Nuxt & Caffeine · Powered by Scram 411
 </footer>
 
 <script>
